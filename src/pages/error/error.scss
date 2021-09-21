@@ -1,0 +1,12 @@
+.error {
+    min-height: calc(100vh - 145px);
+    padding: 96px 0px 100px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px auto;
+    max-width: 1280px;
+    width: 100%;
+}

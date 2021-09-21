@@ -1,0 +1,19 @@
+.patient {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: rgba(25, 26, 30, 0.08%) 0px 1px 3px;
+    border: none;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.85%);
+    &__img {
+        img {
+            width: 75px;
+            height: 75px;
+        }
+    }
+    &__info {
+        margin-left: 10px;
+    }
+}

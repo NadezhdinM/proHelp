@@ -1,0 +1,99 @@
+.search {
+    min-height: calc(100vh - 145px - 96px);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    &__inner {
+        width: 100%;
+    }
+    &__title {
+        margin-bottom: 52px;
+        text-align: center;
+    }
+    &__h1 {
+        margin-bottom: 16px;
+        color: rgb(19, 30, 54); 
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    &__p {
+        color: rgb(168, 171, 189);
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    &__form {
+        width: 100%;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        select {
+            max-width: 310px;
+            width: 100%;
+            margin-right: 8px;
+            padding: 13px 33px 13px 13px;
+            font-size: 16px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: url(/assets/images/arrow.svg) no-repeat #fff;
+            background-position: right 15px top 50%;
+            background-size: 16px;
+            height: 56px;
+            box-shadow: rgba(25, 26, 30, 0.08%) 0px 1px 3px;
+            border: none;
+            border-radius: 10px;
+            color: rgba(0, 0, 0, 0.85);
+            cursor: pointer;   
+            option:checked { 
+                background-color: green; 
+                width: 100px;
+            }
+        }
+        select::-ms-expand {
+            display: none; /* Remove default arrow in Internet Explorer 10 and 11 */
+        }
+        input {
+            max-width: 400px;
+            width: 100%;
+            margin-right: 8px;
+            padding: 13px 18px 13px;
+            font-size: 16px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: url(/assets/images/search.svg) no-repeat #fff;
+            background-position: right 15px top 50%;
+            background-size: 16px;
+            height: 56px;
+            box-shadow: rgba(25, 26, 30, 0.08%) 0px 1px 3px;
+            border: none;
+            border-radius: 10px;
+            color: rgba(0, 0, 0, 0.85%);
+        }
+    }
+    &__desiase {
+        padding: 10px 20px;
+        font-size: 16px;
+        line-height: 22px;
+        cursor: pointer;
+        &:hover {
+            background: #f8f9fb;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .search {
+        &__form {
+            input, select, button {
+                max-width: 310px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

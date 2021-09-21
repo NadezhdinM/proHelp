@@ -1,0 +1,47 @@
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    background-color: rgba(0,0,0,.45);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.inner {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.5715;
+    word-wrap: break-word;
+    max-width: 410px !important;
+    width: 100% !important;
+    background: rgb(255, 255, 255);
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    background-color: rgba(0,0,0,.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
